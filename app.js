@@ -18,7 +18,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 // import all routes here
-import userRoutes from "./routes/userRoutes.js"
+import userRoutes from "./routes/user.route.js"
 
 // router middleware
 app.use("/api/v1",userRoutes);
